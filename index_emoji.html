@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Find the Cake - Andrea's Birthday&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Courier New', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #111;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(4, 80px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tile {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #444;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid #777;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tile:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#message {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;🎂 Help Andrea Find Her Birthday Cake!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;audio id="themeAudio" autoplay&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;source src="https://drive.google.com/uc?export=download&amp;id=1Hzt1AuhuJ5t1nZH7TalfrG3EVxmcyUdV" type="audio/mpeg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>Your browser does not support the audio element.</p>
+<p class="p1">&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid" id="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="message"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const grid = document.getElementById('grid');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const message = document.getElementById('message');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const cakeIndex = Math.floor(Math.random() * 16);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const characters = [</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'🧑‍💼', '👩‍💼', '👨‍💼', '🕵️',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'🧑‍💻', '💼', '📎', '📠',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'📊', '📅', '🗂️', '📁',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'📝', '📋', '📇', '📌'</p>
+<p class="p1"><span class="Apple-converted-space">    </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let gameOver = false;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>for (let i = 0; i &lt; 16; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const tile = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tile.classList.add('tile');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tile.dataset.index = i;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tile.textContent = '❓';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>tile.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (gameOver) return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (parseInt(tile.dataset.index) === cakeIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>tile.textContent = '🎂';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>message.innerHTML = '&lt;strong&gt;Joyeux anniversaire Andrea!&lt;/strong&gt;&lt;br&gt;🎉 El equipo UProfit te celebra como a la mejor jefa en Scranton (y el mundo).';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>gameOver = true;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>tile.textContent = characters[i];</p>
+<p class="p1"><span class="Apple-converted-space">          </span>tile.style.pointerEvents = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid.appendChild(tile);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
